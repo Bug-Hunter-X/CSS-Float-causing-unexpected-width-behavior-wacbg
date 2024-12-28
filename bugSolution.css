@@ -1,0 +1,19 @@
+The issue can be solved by adding the following CSS rule to the parent container:
+
+```css
+.parent {
+  overflow: hidden;  /* Or auto */ 
+}
+```
+
+By setting `overflow: hidden` or `overflow: auto` on the parent container, the parent will collapse to fit the floated children, resulting in the expected layout.  Here is the updated CSS:
+
+```css
+.parent {
+  overflow: hidden;
+}
+div {
+  width: 50%;
+  float: left;
+}
+```
