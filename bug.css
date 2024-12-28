@@ -1,0 +1,10 @@
+The following CSS rule is causing unexpected behavior:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+The issue is that the `float: left;` property is causing the `div` to not take up the full available width of its parent container.
